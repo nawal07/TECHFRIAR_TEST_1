@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Car Rental</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navigation Bar -->
+
+      <div class="navbar">
+        <div class="navbar-heading">
+          <img src="./public/images/Layer_1.svg" alt="" />
+          <img
+            class="hamburger-icon"
+            src="./public/images/hamburger-icon.svg"
+            alt=""
+          />
+          <div class="navbar-social-media">
+            <div class="navbar-social-media-facebook">
+              <img src="./public/images/facebook.svg" alt="" />
+            </div>
+            <div class="navbar-social-media-instagram">
+              <img src="./public/images/instagram.svg" alt="" />
+            </div>
+            <div class="navbar-social-media-twitter">
+              <img src="./public/images/twitter.svg" alt="" />
+            </div>
+            <div class="navbar-social-media-linkedin">
+              <img src="./public/images/linkedin.svg" alt="" />
+            </div>
+          </div>
+          <div class="navbar-heading-end">
+            <p>About</p>
+            <p>Offers</p>
+            <p>Corporate</p>
+            <p>Personal</p>
+            <p>Locations</p>
+            <p>Contact Us</p>
+            <div class="notification-user-box">
+              <div class="notification-box">
+                <img
+                  class="notification"
+                  src="./public/images/notifications.svg"
+                  alt=""
+                />
+              </div>
+              <img class="user" src="./public/images/user.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <p class="navbar-catch">
+          Sunday Pick Up/Drop-Off only at Dubai Silicon Oasis & Habtoor Grand
+          Sales Counters | All Rates inclusive of VAT. T&C’s apply | Follow us
+          on Social Media for New Offers
+        </p>
+      </div>
+
+      <!-- End of navigation bar  -->
+
+      <!-- Searching Car Section   -->
+
+      <div class="main-search">
+        <div class="main-search-type">
+          <div class="same-pick-up">
+            <p>Same as Pick-Up</p>
+          </div>
+          <div class="diff-drop-off"><p>Different Drop-Off</p></div>
+          <div class="select-vehicle">
+            <select
+              name="vehicle-type"
+              id=""
+              aria-placeholder="Select Vehicle Type"
+            >
+              <option value="" disabled selected>Select Vehicle Type</option>
+              <option value="1">Type 1</option>
+              <option value="2">Type 2</option>
+            </select>
+          </div>
+        </div>
+        <div class="main-search-browse">
+          <div class="main-search-location">
+            <div>
+              <img class="icons" src="./public/images/location.svg" alt="" />
+              <p>Al Quoz</p>
+            </div>
+            <img src="./public/images/down-arrow.svg" alt="" />
+          </div>
+          <div class="main-search-from-date">
+            <img class="icons" src="./public/images/calendar.svg" alt="" />
+            <p>30/10/2023</p>
+            <p>09:00 AM</p>
+          </div>
+          <div class="main-search-to-date">
+            <img class="icons" src="./public/images/calendar.svg" alt="" />
+            <p>29/11/2023</p>
+            <p>09:00 AM</p>
+          </div>
+          <div class="main-search-search-button">
+            <img class="icons" src="./public/images/search-line.svg" alt="" />
+          </div>
+          <div class="main-search-quick-book">
+            <div class="main-search-quick-book-content">
+              <p>Quick Book</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-search-end">
+          <p>Download our App for easy accessibility anytime, anywhere!</p>
+          <div class="download-links-responsive">
+            <div class="appstore-download">
+              <img src="./public/images/apple-logo.svg" alt="" />
+              <div class="appstore-content">
+                <p>Download on the</p>
+                <h5>App Store</h5>
+              </div>
+            </div>
+            <div class="playstore-download">
+              <img src="./public/images/playstore-logo.svg" alt="" />
+              <div class="playstore-content">
+                <p>GET IT ON</p>
+                <h5>Google Play</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-icons-phone">
+        <img src="./public/images/phone.svg" alt="" />
+      </div>
+      <div class="contact-icons-24-7">
+        <img src="./public/images/24-7.svg" alt="" />
+      </div>
+
+      <!-- End of Searching Car Section -->
+
+      <!-- Cover Image Section  -->
+
+      <div class="main-cover-image">
+        <div class="main-cover-image-text">
+          <div class="main-cover-image-text-one">
+            <p>Recieve guaranteed</p>
+            <div class="gift-voucher"><p>GIFT VOUCHER</p></div>
+          </div>
+          <p>on a monthly hire or lease</p>
+        </div>
+        <br />
+        <img class="group" src="./public/images/Group.svg" alt="" />
+      </div>
+
+      <!-- End of Cover Image Section  -->
+
+      <!-- Popular Car Section   -->
+
+      <div class="popular-car-section">
+        <p>Most popular cars</p>
+        <div class="book-car-section">
+          <div class="car-one">
+            <img src="./public/images/eclipse.svg" alt="" />
+            <div class="car-one-content">
+              <div class="car-one-description">
+                <p class="car-title">Mitsubishi Eclipse</p>
+                <p>
+                  Eclipse Cross is a fusion of sharp coupe looks and dynamic SUV
+                  mobility with signature Mitsubishi styling, technology and
+                  driving confidence.
+                </p>
+              </div>
+              <div class="car-one-features-cum-book">
+                <img src="./public/images/car-one-features.svg" alt="" />
+                <div class="car-booking">
+                  <p>AED 2700/monthly</p>
+                  <p class="book-now">Book Now</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="car-two">
+            <img src="./public/images/jac-j7.svg" alt="" />
+            <div class="car-two-content">
+              <div class="car-two-description">
+                <p class="car-title">Jac J7</p>
+                <p>
+                  S3 Plus has been rated Five-Star in C-NCAP including front
+                  impact, side impact, frontal side impact & Whipping test.
+                </p>
+              </div>
+              <div class="car-two-features-cum-book">
+                <img src="./public/images/car-one-features.svg" alt="" />
+                <div class="car-booking">
+                  <p>AED 2700/monthly</p>
+                  <p class="book-now">Book Now</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End of Popular Car Section  -->
+
+      <!-- Subscribe Section   -->
+
+      <div class="subscribe-section">
+        <div class="subscribe-section-part-one">
+          <p class="subscribe-here">
+            Subscribe here for exclusive offers and updates!
+          </p>
+          <div class="subscribe-form">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email" />
+          </div>
+          <p class="subscribe-catch">
+            Don't miss out! enter your email and your name, then hit subscribe
+            to unlock a world of special offers and details.
+          </p>
+          <p class="subscribe-catch-responsive">
+            Please select the ways you would like to hear from Diamondlease, and
+            confirm that you’re happy for us to store your data in line with our
+            Privacy Policy.
+          </p>
+          <button>Subscribe</button>
+        </div>
+        <div class="subscribe-section-part-two">
+          <div class="subscribe-phone-image">
+            <img src="./public/images/subscribe-phone.svg" alt="" />
+          </div>
+          <div class="subscribe-phone-details">
+            <p>
+              Enter your number and receive a direct link to download the app
+            </p>
+            <input type="text" placeholder="Enter Phone Number" />
+            <button>Get the Link</button>
+            <p class="get-links">Get in on</p>
+            <div class="download-links">
+              <div class="download-appstore">
+                <img src="./public/images/apple-logo.svg" alt="" />
+                <div class="appstore-content">
+                  <p>Download on the</p>
+                  <h5>App Store</h5>
+                </div>
+              </div>
+              <div class="download-playstore">
+                <img src="./public/images/playstore-logo.svg" alt="" />
+                <div class="playstore-content">
+                  <p>GET IT ON</p>
+                  <h5>Google Play</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End of Subscribe Section  -->
+
+      <!-- Rent/Lease Section  -->
+
+      <div class="rent-lease-section">
+        <p class="rent-lease-section-title">Rent/Lease in three easy steps</p>
+        <div class="rent-lease-section-content">
+          <div>
+            <div class="rent-lease-section-content-title"><p>01</p></div>
+            <div class="rent-lease-section-content-description">
+              <img src="./public/images/rent-lease-location.svg" alt="" />
+              <p>
+                Select the location. Browse through our available options and
+                find the perfect car to suit your needs
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="rent-lease-section-content-title"><p>02</p></div>
+            <div class="rent-lease-section-content-description">
+              <img src="./public/images/rent-lease-calendar.svg" alt="" />
+              <p>Choose your desired Pick-Up date and time.</p>
+            </div>
+          </div>
+          <div>
+            <div class="rent-lease-section-content-title"><p>03</p></div>
+            <div class="rent-lease-section-content-description">
+              <img src="./public/images/rent-lease-car.svg" alt="" />
+              <p>
+                Make payment and book the car. Select an option to either have
+                the car delivered to your location or pick it up directly from
+                us.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End of Rent/Lease Section -->
+
+      <!-- Locations Section  -->
+
+      <div class="location-section">
+        <h2>Locations</h2>
+        <div class="different-locations">
+          <div class="location">
+            <img src="./public/images/location-red.svg" alt="" />
+            <p>Dubai</p>
+          </div>
+          <div class="bar"></div>
+          <div class="location">
+            <img src="./public/images/location-red.svg" alt="" />
+            <p>Abu Dhabi</p>
+          </div>
+          <div class="bar"></div>
+          <div class="location">
+            <img src="./public/images/location-red.svg" alt="" />
+            <p>Sharjah</p>
+          </div>
+          <div class="bar"></div>
+          <div class="location">
+            <img src="./public/images/location-red.svg" alt="" />
+            <p>Fujairah</p>
+          </div>
+          <div class="bar"></div>
+          <div class="location">
+            <img src="./public/images/location-red.svg" alt="" />
+            <p>Ras Al Khaimah</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- End of Location Section  -->
+
+      <!-- FAQ Section  -->
+
+      <div class="faq-section">
+        <h2>Frequently asked questions</h2>
+        <div class="faq-section-contents">
+          <div class="faq-section-contents-title">
+            <h3>What is my eligibility to book a car?</h3>
+            <img src="./public/images/xmark.svg" alt="" />
+          </div>
+          <div class="faq-section-contents-description">
+            You should be of 18 years old above and you must possess a valid
+            driving license
+          </div>
+          <div class="faq-section-contents-bar"></div>
+        </div>
+
+        <div class="faq-section-contents-title">
+          <h3>Can i book for any period of time?</h3>
+          <img src="./public/images/plus.svg" alt="" />
+        </div>
+        <div class="faq-section-contents-bar"></div>
+
+        <div class="faq-section-contents-title">
+          <h3>Can i opt car for a longer period?</h3>
+          <img src="./public/images/plus.svg" alt="" />
+        </div>
+        <div class="faq-section-contents-bar"></div>
+
+        <div class="faq-section-contents-title">
+          <h3>Can i book one-way trip?</h3>
+          <img src="./public/images/plus.svg" alt="" />
+        </div>
+        <div class="faq-section-contents-bar"></div>
+
+        <div class="faq-section-contents-title">
+          <h3>Is there home delivery option available?</h3>
+          <img src="./public/images/plus.svg" alt="" />
+        </div>
+        <div class="faq-section-contents-bar"></div>
+
+        <div class="faq-section-contents-title">
+          <h3>How can i make the payment?</h3>
+          <img src="./public/images/plus.svg" alt="" />
+        </div>
+      </div>
+
+      <!-- End of FAQ Section  -->
+    </div>
+    <!-- Footer Section  -->
+
+    <div class="footer-section">
+      <div class="footer-section-head">
+        <div class="footer-section-head-part-one">
+          <img src="./public/images/logo-footer.svg" alt="" />
+          <p>Member of the</p>
+          <p>Al Habtoor Group</p>
+        </div>
+        <div class="footer-section-head-part-two">
+          <div>
+            <div>
+              <p>Home</p>
+              <p>About Us</p>
+              <p>Services</p>
+            </div>
+            <div>
+              <p>Offers</p>
+              <p>Locations</p>
+              <p>Contact Us</p>
+            </div>
+
+            <div>
+              <p>FAQ</p>
+              <p>Privacy Policy</p>
+              <p>Service Request</p>
+            </div>
+            <div>
+              <p>Career</p>
+              <p>Terms & Conditions</p>
+              <p></p>
+            </div>
+          </div>
+          <p>Al Habtoor Companies</p>
+          <div>
+            <p>Hospitality</p>
+            <p>Real Estate</p>
+            <p>Education</p>
+            <p>Publishing</p>
+            <p>Automotive</p>
+            <p>Vehicle Leasing</p>
+          </div>
+        </div>
+        <div class="footer-section-head-part-three">
+          <p>FOLLOW US ON</p>
+          <div>
+            <img src="./public/images/facebook-white.svg" alt="" />
+            <img src="./public/images/twitter-white.svg" alt="" />
+            <img src="./public/images/instagram-white.svg" alt="" />
+            <img src="./public/images/linkedin-white.svg" alt="" />
+            <img src="./public/images/youtube-white.svg" alt="" />
+          </div>
+          <img
+            class="global-sign"
+            src="./public/images/global-sign.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="footer-section-tail">
+        <p>© 2018 Car rental LLC - All Rights Reserved.</p>
+      </div>
+    </div>
+
+    <!-- End of Footer Section  -->
+  </body>
+</html>
