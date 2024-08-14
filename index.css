@@ -306,6 +306,9 @@
   height: 14px;
 }
 
+.book-quickbook-car {
+  display: none;
+}
 .contact-icons-phone {
   width: 48px;
   height: 45px;
@@ -380,7 +383,7 @@
 /* Popular Car Section  */
 
 .popular-car-section {
-  width: 100%;
+  width: fit-content;
   height: fit-content;
   padding-left: 40px;
   font-family: Poppins;
@@ -395,7 +398,7 @@
 }
 
 .book-car-section {
-  width: 96vw;
+  width: 100%;
   height: fit-content;
   display: flex;
   gap: 24px;
@@ -422,12 +425,16 @@
   justify-content: space-between;
   align-items: center;
 }
-.car-one-content p,
-.car-two-content p {
+.car-one-content .car-description,
+.car-two-content .car-description {
   font-size: 12px;
   font-weight: 400;
   line-height: 18.5px;
   text-align: left;
+}
+
+.car-description-responsive {
+  display: none;
 }
 
 .car-one-description,
@@ -579,6 +586,14 @@
 
 .subscribe-section-part-two .subscribe-phone-image {
   padding-left: 20px;
+}
+
+.get-links-responsive {
+  display: none;
+}
+
+.subscribe-phone-details-responsive {
+  display: none;
 }
 
 .subscribe-phone-details {
@@ -913,6 +928,10 @@
   width: 64px;
   height: 24px;
 }
+
+.footer-section-responsive {
+  display: none;
+}
 .footer-section-tail {
   border-top: 0.5px solid #939393;
 }
@@ -927,38 +946,28 @@
 }
 /* End of Footer Section  */
 
-@media (min-width: 768px) and (max-width: 1439px) {
-  .navbar-social-media,
-  .navbar-heading-end,
-  .navbar-catch {
-    display: none;
-  }
+/* Responsive Breakpoint #1 */
 
-  .popular-car-section {
-    width: 1438px;
-  }
-
+@media (max-width: 1439px) {
+  /* Exclusions  */
   body {
     overflow-x: hidden;
   }
-  .container {
-    padding: 0 20px;
-  }
-}
 
-@media (max-width: 767px) {
   .navbar-social-media,
   .navbar-heading-end,
   .navbar-catch,
-  .rent-lease-section,
   .main-search-type,
   .main-search-browse,
-  .location-section,
-  .faq-section,
-  .footer-section,
-  .subscribe-section-part-one .subscribe-catch {
+  .subscribe-section-part-one .subscribe-catch,
+  .subscribe-phone-details,
+  .different-locations .bar,
+  .footer-section-responsive,
+  .footer-section-tail-responsive {
     display: none;
   }
+
+  /* Main Container Rsponsivenes  */
 
   .container {
     padding: 0 20px;
@@ -975,6 +984,8 @@
   .hamburger-icon {
     display: block;
   }
+
+  /* Main Search Section  */
 
   .main-search {
     padding: 0;
@@ -1016,12 +1027,17 @@
     height: 36px;
   }
 
+  /* Main Cover Image  */
+
   .main-cover-image {
     width: 100%;
     background-position: center;
   }
 
+  /* Popular car Section  */
+
   .popular-car-section {
+    /* width: fit-content; */
     padding-left: 20px;
     height: fit-content;
   }
@@ -1058,22 +1074,6 @@
     margin-top: 28px;
   }
 
-  .car-one-description p,
-  .car-two-description p {
-    padding-left: 16px;
-    padding-right: 20px;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-    opacity: 0.75;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
-
   .car-one-features-cum-book,
   .car-two-features-cum-book {
     padding-top: 10px;
@@ -1105,6 +1105,8 @@
     height: 40px;
     padding: 12px;
   }
+
+  /* Subscribe Scetion  */
 
   .subscribe-section {
     width: 100%;
@@ -1151,5 +1153,628 @@
     line-height: 21px;
     text-align: left;
     padding-right: 40px;
+    padding-top: 24px;
+  }
+
+  .subscribe-section-part-one button {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .subscribe-section-part-two {
+    width: 100%;
+    padding: 0;
+    padding-left: 8%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    background-color: #e21e26;
+    border-radius: 10px;
+  }
+
+  .subscribe-section-part-two .subscribe-phone-image {
+    display: flex;
+    gap: 4%;
+    padding-left: 20px;
+  }
+
+  .subscribe-phone-image {
+    display: flex;
+  }
+
+  .subscribe-phone-details-responsive {
+    display: block;
+  }
+
+  .subscribe-phone-details-responsive {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-right: 35px;
+    padding-top: 20px;
+  }
+
+  .subscribe-phone-details-responsive .download-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+  }
+
+  .subscribe-phone-details-responsive .download-appstore,
+  .subscribe-phone-details-responsive .download-playstore {
+    width: 16vw;
+    gap: 4px;
+    padding: 3px 12px;
+  }
+
+  .subscribe-phone-details-responsive .download-appstore h5,
+  .subscribe-phone-details-responsive .download-playstore h5 {
+    font-family: Poppins;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    height: 24px;
+  }
+
+  .subscribe-phone-details-responsive .download-appstore p,
+  .subscribe-phone-details-responsive .download-playstore p {
+    font-size: 9px;
+    font-weight: 200;
+  }
+
+  .subscribe-phone-details-responsive p {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25.5px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .get-links-responsive {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+
+  .get-links-responsive input {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    border: none;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-left: 20px;
+    margin: 12px 0;
+  }
+
+  .get-links-responsive button {
+    width: 144px;
+    height: 42px;
+    padding: 12px 30px;
+    border-radius: 8px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  /* Rent/Lease Section  */
+
+  .rent-lease-section {
+    width: 100%;
+  }
+
+  .rent-lease-section-title {
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .rent-lease-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  /* Location Section  */
+
+  .location-section {
+    height: 40vh;
+    padding: 0px;
+    margin: 0 auto;
+  }
+
+  .location-section h2 {
+    font-size: 28px;
+    text-align: left;
+  }
+
+  .different-locations {
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .different-locations p {
+    width: fit-content;
+  }
+
+  /* FAQ Section  */
+
+  .faq-section {
+    width: 100%;
+  }
+
+  /* Footer Section  */
+
+  .footer-section {
+    width: 100%;
+    height: 45vh;
+  }
+
+  .footer-section-head {
+    padding-top: 24px;
+    height: 38vh;
+  }
+  .footer-section-head-part-two {
+    width: 60%;
+  }
+}
+
+/* Responsive Breakpoint #2 */
+
+@media (max-width: 425px) {
+  .footer-section-head,
+  .footer-section-tail,
+  .car-description {
+    display: none;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  /* Navbar Section  */
+  .navbar {
+    height: fit-content;
+    margin-bottom: 24px;
+  }
+
+  .navbar-heading .main-logo {
+    width: 256px;
+  }
+
+  /* Main Search Section  */
+
+  .main-search {
+    height: fit-content;
+    width: 92vw;
+    padding: 16px;
+  }
+  .main-search-end {
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .appstore-content h5,
+  .playstore-content h5 {
+    height: 24px;
+  }
+
+  .book-quickbook-car {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 0;
+  }
+
+  .book-quickbook-car button {
+    width: 160px;
+    height: 38px;
+    border-radius: 4px;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    color: #e21e26;
+    border: 1px solid #e21e26;
+  }
+  .book-quickbook-car .book-car {
+    background-color: #e21e26;
+    color: #ffffff;
+  }
+
+  /* Contact Icons   */
+
+  .contact-icons-phone {
+    width: 40px;
+    height: 40px;
+    top: 196px;
+    right: 0;
+  }
+  .contact-icons-24-7 {
+    width: 40px;
+    height: 40px;
+    top: 138px;
+    right: 0;
+  }
+
+  .contact-icons-phone img,
+  .contact-icons-24-7 img {
+    width: 60%;
+  }
+
+  /* Main Cover Image  */
+
+  .main-cover-image {
+    height: 30vh;
+    background-size: cover;
+  }
+
+  .main-cover-image-text {
+    font-size: 9.8px;
+    font-weight: 400;
+    line-height: 14.35px;
+    text-align: left;
+    padding-left: 0;
+  }
+  .main-cover-image-text-one {
+    gap: 4px;
+  }
+  .gift-voucher {
+    width: fit-content;
+    height: fit-content;
+    font-size: 8px;
+    border-radius: 0;
+    padding: 3px;
+  }
+
+  /* Popular Car Section  */
+
+  .popular-car-section {
+    padding: 0;
+    margin-left: 90px;
+  }
+  .popular-car-section p {
+    font-size: 16px;
+    margin: 20px;
+    margin-left: 0;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .book-car-section {
+    /* flex-wrap: wrap; */
+  }
+
+  .book-car-section .car-images {
+    width: fit-content;
+    height: 164px;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .car-one,
+  .car-two {
+    width: fit-content;
+  }
+
+  .car-one-content,
+  .car-two-content {
+    width: 207px;
+    height: 206px;
+    flex-direction: column;
+  }
+
+  .car-one-content .car-title,
+  .car-two-content .car-title {
+    font-size: 16px;
+    margin: 0;
+    margin-top: 16px;
+    margin-left: 12px;
+    opacity: 1;
+  }
+
+  .car-one-description .car-description-responsive,
+  .car-two-description .car-description-responsive {
+    padding-left: 12px;
+    padding-bottom: 8px;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    opacity: 0.75;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .car-description-responsive {
+    display: block;
+  }
+
+  .car-one-features-cum-book,
+  .car-two-features-cum-book {
+    overflow: hidden;
+  }
+  .car-one-features-cum-book img,
+  .car-two-features-cum-book img {
+    width: 80vw;
+    background-size: cover;
+  }
+
+  .car-one-features-cum-book p,
+  .car-two-features-cum-book p {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: left;
+    margin: 0;
+  }
+
+  /* Subscribe Section  */
+
+  .subscribe-section-part-one,
+  .subscribe-section-part-two {
+    padding-top: 32px;
+    padding-right: 8px;
+  }
+  .subscribe-section-part-one .subscribe-here {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .subscribe-section-part-one .subscribe-catch-responsive {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .subscribe-section-part-one button {
+    width: 32vw;
+    height: 48px;
+    font-size: 13px;
+    line-height: 19.5px;
+    margin-top: 24px;
+  }
+
+  .subscribe-section-part-two {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 4vh;
+  }
+
+  .subscribe-section-part-two .subscribe-phone-image {
+    padding-left: 0;
+  }
+
+  .subscribe-section-part-two .subscribe-phone-image img {
+    width: 40vw;
+  }
+
+  .subscribe-phone-details-responsive {
+    justify-content: space-evenly;
+    padding-right: 35px;
+    padding-top: 0;
+  }
+
+  .subscribe-phone-details-responsive .download-appstore,
+  .subscribe-phone-details-responsive .download-playstore {
+    width: 28vw;
+    height: 32px;
+    gap: 4px;
+    padding: 3px 12px;
+  }
+
+  .subscribe-phone-details-responsive .download-appstore h5,
+  .subscribe-phone-details-responsive .download-playstore h5 {
+    font-size: 10px;
+    font-weight: 400;
+    height: 24px;
+  }
+
+  .subscribe-phone-details-responsive .download-appstore p,
+  .subscribe-phone-details-responsive .download-playstore p {
+    font-size: 7px;
+    font-weight: 100;
+    line-height: 24px;
+  }
+
+  .subscribe-phone-details-responsive .download-appstore img,
+  .subscribe-phone-details-responsive .download-playstore img {
+    width: 16px;
+  }
+
+  .subscribe-phone-details-responsive p {
+    font-size: 12px;
+    line-height: 15.6px;
+  }
+
+  .get-links-responsive {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 320px;
+  }
+
+  /* Rent/Lease Section */
+
+  .rent-lease-section-title {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  /* Location Section  */
+
+  .location-section {
+    width: 88%;
+    height: fit-content;
+  }
+  .location-section h2 {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    padding: 16px;
+  }
+
+  .different-locations {
+    justify-content: left;
+  }
+
+  .different-locations p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .different-locations img {
+    width: 16px;
+  }
+
+  /* FAQ Section  */
+
+  .faq-section h2 {
+    font-size: 16px;
+    line-height: 0;
+    padding: 32px;
+    padding-bottom: 16px;
+    text-align: left;
+    margin: 0;
+  }
+  .faq-section-contents-title {
+    padding: 16px;
+  }
+  .faq-section-contents-title h3 {
+    font-size: 13px;
+  }
+
+  .faq-section-contents-title img {
+    width: 8px;
+    height: 8px;
+  }
+
+  .faq-section-contents-description {
+    font-size: 12px;
+    line-height: 15.66px;
+    padding: 16px;
+    opacity: 0.8;
+  }
+
+  /* Footer Section  */
+
+  .footer-section {
+    width: 100%;
+    height: 40vh;
+    margin-top: 80px;
+    color: #000000;
+    background-color: #ffffff;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 21px;
+    text-align: left;
+  }
+
+
+  .footer-section-responsive {
+    display: block;
+  }
+
+  .footer-section-head-part-one {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
+  }
+
+  .footer-section-head-part-one img{
+    width: 36vw;
+  }
+  .footer-section-head-part-one p {
+    height: fit-content;
+  }
+  .footer-section-head-part-one div {
+    display: flex;
+    justify-content: end;
+  }
+
+  .footer-section-head-part-one .icons-pack {
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-section-head-part-one .icons {
+    width: 16px;
+    height: 64px;
+  }
+
+  .footer-section-head-part-two{
+    margin: auto;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer-section-tail-responsive{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19.5px;
+    align-items: center;
+    padding: 16px 0;
+    
+  }
+  .footer-section-tail-responsive div{
+    display: flex;
+    gap: 32px;
+    padding: 16px;
+    padding-bottom: 0;
+    justify-content: space-around;
+    
+  }
+
+  .footer-section-tail-responsive img{
+    width: 88px;
+    margin: 16px 0;
+  }
+  .footer-section-tail-responsive p{
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .footer-section-tail-responsive .border{
+    height: 0.5px;
+    width: 100%;
+    margin-bottom: 16px ;
+    background-color: #ffffff;
+    opacity: .5;
   }
 }

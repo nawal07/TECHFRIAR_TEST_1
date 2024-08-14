@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="./index.css" />
     <title>Car Rental</title>
   </head>
-  <body> 
+  <body>
     <div class="container">
       <!-- Navigation Bar -->
 
       <div class="navbar">
         <div class="navbar-heading">
-          <img src="./public/images/Layer_1.svg" alt="" />
+          <img class="main-logo" src="./public/images/Layer_1.svg" alt="" />
           <img
             class="hamburger-icon"
             src="./public/images/hamburger-icon.svg"
@@ -135,6 +135,10 @@
           </div>
         </div>
       </div>
+      <div class="book-quickbook-car">
+        <button class="book-car">Book a Car</button>
+        <button>Quick Book</button>
+      </div>
       <div class="contact-icons-phone">
         <img src="./public/images/phone.svg" alt="" />
       </div>
@@ -154,7 +158,6 @@
           </div>
           <p>on a monthly hire or lease</p>
         </div>
-        <br />
         <img class="group" src="./public/images/Group.svg" alt="" />
       </div>
 
@@ -166,14 +169,18 @@
         <p>Most popular cars</p>
         <div class="book-car-section">
           <div class="car-one">
-            <img src="./public/images/eclipse.svg" alt="" />
+            <img class="car-images" src="./public/images/eclipse.svg" alt="" />
             <div class="car-one-content">
               <div class="car-one-description">
                 <p class="car-title">Mitsubishi Eclipse</p>
-                <p>
+                <p class="car-description">
                   Eclipse Cross is a fusion of sharp coupe looks and dynamic SUV
                   mobility with signature Mitsubishi styling, technology and
                   driving confidence.
+                </p>
+                <p class="car-description-responsive">
+                  With its aerodynamic curves and bold lines, this car is a
+                  standout on the road...
                 </p>
               </div>
               <div class="car-one-features-cum-book">
@@ -186,13 +193,17 @@
             </div>
           </div>
           <div class="car-two">
-            <img src="./public/images/jac-j7.svg" alt="" />
+            <img class="car-images" src="./public/images/jac-j7.svg" alt="" />
             <div class="car-two-content">
               <div class="car-two-description">
                 <p class="car-title">Jac J7</p>
-                <p>
+                <p class="car-description">
                   S3 Plus has been rated Five-Star in C-NCAP including front
                   impact, side impact, frontal side impact & Whipping test.
+                </p>
+                <p class="car-description-responsive">
+                  With its aerodynamic curves and bold lines, this car is a
+                  standout on the road...
                 </p>
               </div>
               <div class="car-two-features-cum-book">
@@ -234,6 +245,34 @@
         <div class="subscribe-section-part-two">
           <div class="subscribe-phone-image">
             <img src="./public/images/subscribe-phone.svg" alt="" />
+            <div class="subscribe-phone-details-responsive">
+              <div>
+                <p class="get-links">Get it on</p>
+                <div class="download-links">
+                  <div class="download-appstore">
+                    <img src="./public/images/apple-logo.svg" alt="" />
+                    <div class="appstore-content">
+                      <p>Download on the</p>
+                      <h5>App Store</h5>
+                    </div>
+                  </div>
+                  <div class="download-playstore">
+                    <img src="./public/images/playstore-logo.svg" alt="" />
+                    <div class="playstore-content">
+                      <p>GET IT ON</p>
+                      <h5>Google Play</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Enter your number and receive a direct link to download the app
+              </p>
+            </div>
+          </div>
+          <div class="get-links-responsive">
+            <input type="text" placeholder="Enter Phone Number" />
+            <button>Get the Link</button>
           </div>
           <div class="subscribe-phone-details">
             <p>
@@ -427,6 +466,7 @@
             <p>Vehicle Leasing</p>
           </div>
         </div>
+
         <div class="footer-section-head-part-three">
           <p>FOLLOW US ON</p>
           <div>
@@ -443,7 +483,74 @@
           />
         </div>
       </div>
+      <div class="footer-section-responsive">
+        <div class="footer-section-head-part-one">
+          <img src="./public/images/logo-footer-black.svg" alt="" />
+
+          <div class="icons-pack">
+            <img
+              class="icons"
+              src="./public/images/facebook-black.svg"
+              alt=""
+            />
+            <img class="icons" src="./public/images/twitter-black.svg" alt="" />
+            <img
+              class="icons"
+              src="./public/images/instagram-black.svg"
+              alt=""
+            />
+            <img
+              class="icons"
+              src="./public/images/linkedin-black.svg"
+              alt=""
+            />
+            <img class="icons" src="./public/images/youtube-black.svg" alt="" />
+          </div>
+        </div>
+        <div class="footer-section-head-part-two">
+          <div>
+            <p>Home</p>
+            <p>Offers</p>
+            <p>Career</p>
+            <p>About Us</p>
+            <p>Locations</p>
+          </div>
+          <div>
+            <p>FAQ</p>
+            <p>Terms & Conditions</p>
+            <p>Service Request</p>
+          </div>
+          <div>
+            <p>Privacy Policy</p>
+            <p>Services</p>
+            <p>Contact Us</p>
+          </div>
+          <div>
+            <p></p>
+          </div>
+        </div>
+      </div>
       <div class="footer-section-tail">
+        <p>© 2018 Car rental LLC - All Rights Reserved.</p>
+      </div>
+      <div class="footer-section-tail-responsive">
+        <p>Al Habtoor Companies</p>
+
+        <div>
+          <p>Hospitality</p>
+          <p>Real Estate</p>
+          <p>Publishing</p>
+        </div>
+        <div>
+          <p>Automotive</p>
+          <p>Vehicle Leasing</p>
+        </div>
+        <img
+          class="global-sign"
+          src="./public/images/global-sign-responsive.svg"
+          alt=""
+        />
+        <span class="border"></span>
         <p>© 2018 Car rental LLC - All Rights Reserved.</p>
       </div>
     </div>
