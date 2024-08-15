@@ -1337,7 +1337,7 @@
 
 /* Responsive Breakpoint #2 */
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .footer-section-head,
   .footer-section-tail,
   .car-description {
@@ -1698,7 +1698,6 @@
     text-align: left;
   }
 
-
   .footer-section-responsive {
     display: block;
   }
@@ -1709,7 +1708,7 @@
     padding: 16px;
   }
 
-  .footer-section-head-part-one img{
+  .footer-section-head-part-one img {
     width: 36vw;
   }
   .footer-section-head-part-one p {
@@ -1731,7 +1730,7 @@
     height: 64px;
   }
 
-  .footer-section-head-part-two{
+  .footer-section-head-part-two {
     margin: auto;
     width: 90%;
     flex-direction: column;
@@ -1739,7 +1738,7 @@
     justify-content: space-around;
   }
 
-  .footer-section-tail-responsive{
+  .footer-section-tail-responsive {
     background-color: #000000;
     color: #ffffff;
     display: flex;
@@ -1750,31 +1749,29 @@
     line-height: 19.5px;
     align-items: center;
     padding: 16px 0;
-    
   }
-  .footer-section-tail-responsive div{
+  .footer-section-tail-responsive div {
     display: flex;
     gap: 32px;
     padding: 16px;
     padding-bottom: 0;
     justify-content: space-around;
-    
   }
 
-  .footer-section-tail-responsive img{
+  .footer-section-tail-responsive img {
     width: 88px;
     margin: 16px 0;
   }
-  .footer-section-tail-responsive p{
+  .footer-section-tail-responsive p {
     font-size: 11px;
     line-height: 16px;
   }
 
-  .footer-section-tail-responsive .border{
+  .footer-section-tail-responsive .border {
     height: 0.5px;
     width: 100%;
-    margin-bottom: 16px ;
+    margin-bottom: 16px;
     background-color: #ffffff;
-    opacity: .5;
+    opacity: 0.5;
   }
 }
