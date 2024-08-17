@@ -1394,6 +1394,10 @@ body {
 
   .book-quickbook-car {
     display: flex;
+    flex-direction: column;
+  }
+  .book-quickbook-car-options {
+    display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 8px;
@@ -1414,6 +1418,87 @@ body {
   .book-quickbook-car .book-car {
     background-color: #e21e26;
     color: #ffffff;
+  }
+
+  .book-quickbook-car-dropdown_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-car-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    width: 100%;
+  }
+
+  .book-car-options p {
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    opacity: 0.7;
+  }
+
+  .book-car-options .differnt-drop {
+    opacity: 1;
+    color: #000000;
+    border-bottom: 1px solid #000000;
+  }
+
+  .book-car-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: center;
+    width: 100%;
+  }
+  .book-car-details .book-car-details-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+  }
+
+  .book-car-details-heading {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #f6f7f9;
+  }
+
+  .book-car-details-heading div {
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .book-car-search{
+    margin: 24px 0;
+    font-size: 14px !important;
+    line-height: 21px !important;
+    background-color: #e21e26;
+    color: #ffffff !important;
+  }
+  .vehicle-type {
+    appearance: none;
+    font-family: Poppins;
+    font-size: 13px;
+    border: none;
+    background-image: url('./public/images/down-arrow-black.svg');
+    background-repeat: no-repeat;
+    background-position: right 0px center;
+    background-size: 10px;
+    padding-right: 14px;
   }
 
   /* Contact Icons   */
