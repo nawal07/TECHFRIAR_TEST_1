@@ -1,3 +1,21 @@
+document.getElementById('humburgerIcon').addEventListener('click', function () {
+  const dropDownMenu = document.getElementById('dropDownMenu');
+  const mainPage = document.getElementById('mainPage');
+
+  dropDownMenu.style.display = 'block';
+  mainPage.classList.add('fade');
+});
+
+document.getElementById('hideDropdownMenu').addEventListener('click', function () {
+  const dropDownMenu = document.getElementById('dropDownMenu');
+  const mainPage = document.getElementById('mainPage');
+
+  dropDownMenu.style.display = 'none';
+  mainPage.classList.remove('fade');
+});
+
+
+
 document.getElementById('bookCar').addEventListener('click', function (event) {
   const bookCarMenu = document.getElementById('bookCarMenu');
   if (bookCarMenu.style.display == 'none') {

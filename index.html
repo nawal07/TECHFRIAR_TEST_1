@@ -15,13 +15,30 @@
     <title>Car Rental</title>
   </head>
   <body>
-    <div class="container">
+    <div id="dropDownMenu" class="navbar-drop-down-menu">
+      <img
+        id="hideDropdownMenu"
+        src="./public/images/dropdown-menu-xmark.svg"
+        alt=""
+      />
+      <a href="#aboutus">About</a>
+      <a href="#offer">Offers</a>
+      <a>Corporate</a>
+      <a>Personal</a>
+      <a href="#location">Locations</a>
+      <a href="#contactUs">Contact Us</a>
+      <div>
+        <span>Log In/Sign Up</span>
+      </div>
+    </div>
+    <div id="mainPage" class="container">
       <!-- Navigation Bar -->
 
       <div class="navbar">
         <div class="navbar-heading">
           <img class="main-logo" src="./public/images/Layer_1.svg" alt="" />
           <img
+            id="humburgerIcon"
             class="hamburger-icon"
             src="./public/images/hamburger-icon.svg"
             alt=""
@@ -41,12 +58,12 @@
             </div>
           </div>
           <div class="navbar-heading-end">
-            <p>About</p>
-            <p>Offers</p>
-            <p>Corporate</p>
-            <p>Personal</p>
-            <p>Locations</p>
-            <p>Contact Us</p>
+            <a href="#aboutUs">About</a>
+            <a href="#offer">Offers</a>
+            <a>Corporate</a>
+            <a>Personal</a>
+            <a href="#location">Locations</a>
+            <a href="#contactUs">Contact Us</a>
             <div class="notification-user-box">
               <div class="notification-box">
                 <img
@@ -147,7 +164,7 @@
             <select class="vehicle-type" name="vehicle type" id="">
               <option value="">vehicle type</option>
               <option value="">Vehicle 1</option>
-              <option value="">Vehicle 2  </option>
+              <option value="">Vehicle 2</option>
             </select>
           </div>
           <div class="book-car-details">
@@ -170,14 +187,14 @@
                 <img src="./public/images/calendar.svg" alt="" />
                 <p>Pick-Up Date & Time</p>
               </div>
-              <p>  </p>
+              <p></p>
             </div>
             <div class="book-car-details-heading">
               <div>
                 <img src="./public/images/calendar.svg" alt="" />
                 <p>Drop Off Date & Time</p>
               </div>
-              <p>  </p>
+              <p></p>
             </div>
           </div>
           <button class="book-car-search">Search</button>
@@ -194,7 +211,7 @@
 
       <!-- Cover Image Section  -->
 
-      <div class="main-cover-image">
+      <div id="offer" class="main-cover-image">
         <div class="main-cover-image-text">
           <div class="main-cover-image-text-one">
             <p>Recieve guaranteed</p>
@@ -267,7 +284,7 @@
       <!-- Subscribe Section   -->
 
       <div class="subscribe-section">
-        <div class="subscribe-section-part-one">
+        <div id="contactUs" class="subscribe-section-part-one">
           <p class="subscribe-here">
             Subscribe here for exclusive offers and updates!
           </p>
@@ -387,7 +404,7 @@
 
       <!-- Locations Section  -->
 
-      <div class="location-section">
+      <div id="location" class="location-section">
         <h2>Locations</h2>
         <div class="different-locations">
           <div class="location">
@@ -517,7 +534,7 @@
     <!-- Footer Section  -->
 
     <div class="footer-section">
-      <div class="footer-section-head">
+      <div id="aboutUs" class="footer-section-head">
         <div class="footer-section-head-part-one">
           <img src="./public/images/logo-footer.svg" alt="" />
           <p>Member of the</p>
@@ -575,7 +592,7 @@
         </div>
       </div>
       <div class="footer-section-responsive">
-        <div class="footer-section-head-part-one">
+        <div id="aboutus" class="footer-section-head-part-one">
           <img src="./public/images/logo-footer-black.svg" alt="" />
 
           <div class="icons-pack">
