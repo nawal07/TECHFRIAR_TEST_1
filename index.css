@@ -1420,8 +1420,8 @@ body {
     color: #ffffff;
   }
 
-  .book-quickbook-car-dropdown_menu{
-    display: flex;
+  .book-quickbook-car-dropdown_menu {
+    display: none;
     flex-direction: column;
     align-items: center;
   }
@@ -1444,10 +1444,18 @@ body {
     opacity: 0.7;
   }
 
-  .book-car-options .differnt-drop {
+  .book-car-options .differnt-drop,
+  .same-pick.active,
+  .differnt-drop.active {
     opacity: 1;
     color: #000000;
     border-bottom: 1px solid #000000;
+  }
+
+  .differnt-drop.inactive,
+  .same-pick.inactive {
+    opacity: 0.7;
+    border-bottom: none;
   }
 
   .book-car-details {
@@ -1482,7 +1490,7 @@ body {
     gap: 12px;
   }
 
-  .book-car-search{
+  .book-car-search {
     margin: 24px 0;
     font-size: 14px !important;
     line-height: 21px !important;

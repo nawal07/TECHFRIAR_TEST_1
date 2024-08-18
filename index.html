@@ -137,15 +137,17 @@
       </div>
       <div class="book-quickbook-car">
         <div class="book-quickbook-car-options">
-          <button class="book-car">Book a Car</button>
+          <button id="bookCar" class="book-car">Book a Car</button>
           <button>Quick Book</button>
         </div>
-        <div class="book-quickbook-car-dropdown_menu">
+        <div id="bookCarMenu" class="book-quickbook-car-dropdown_menu">
           <div class="book-car-options">
-            <p class="same-pick">Same as Pick-Up</p>
-            <p class="differnt-drop">Different Drop-Off</p>
+            <p id="same-pick" class="same-pick">Same as Pick-Up</p>
+            <p id="differnt-drop" class="differnt-drop">Different Drop-Off</p>
             <select class="vehicle-type" name="vehicle type" id="">
               <option value="">vehicle type</option>
+              <option value="">Vehicle 1</option>
+              <option value="">Vehicle 2  </option>
             </select>
           </div>
           <div class="book-car-details">
@@ -156,7 +158,7 @@
               </div>
               <img src="./public/images/down-arrow.svg" alt="" />
             </div>
-            <div class="book-car-details-heading">
+            <div id="differnt-drop-location" class="book-car-details-heading">
               <div>
                 <img src="./public/images/location.svg" alt="" />
                 <p>Drop Off Location</p>
