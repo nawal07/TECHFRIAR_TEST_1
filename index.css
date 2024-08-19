@@ -1655,13 +1655,13 @@ body {
   .contact-icons-phone {
     width: 40px;
     height: 40px;
-    top: 196px;
+    top: 112px;
     right: 0;
   }
   .contact-icons-24-7 {
     width: 40px;
     height: 40px;
-    top: 138px;
+    top: 160px;
     right: 0;
   }
 
@@ -1675,6 +1675,7 @@ body {
   .main-cover-image {
     height: 30vh;
     background-size: cover;
+    border-radius: 0;
   }
 
   .main-cover-image-text {
@@ -1935,7 +1936,7 @@ body {
   .footer-section {
     width: 100%;
     height: 40vh;
-    margin-top: 80px;
+    margin-top: 64px;
     color: #000000;
     background-color: #ffffff;
     font-family: Poppins;
@@ -1947,6 +1948,7 @@ body {
 
   .footer-section-responsive {
     display: block;
+    background-color: #F6F7F9;
   }
 
   .footer-section-head-part-one {
