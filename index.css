@@ -76,12 +76,10 @@ body {
   line-height: 22.5px;
 }
 
-.navbar-heading-end a{
+.navbar-heading-end a {
   text-decoration: none;
   color: #000000;
 }
-
-
 
 /* The box with notification icon and username */
 .notification-user-box {
@@ -403,7 +401,6 @@ body {
   height: fit-content;
   padding-left: 40px;
   font-family: Poppins;
-  
 }
 
 .popular-car-section p {
@@ -764,7 +761,7 @@ body {
 /* Locations Section  */
 
 .location-section {
-  width: 100%;
+  width: 90%;
   height: 45vh;
   padding: 20px;
   background-color: #000000;
@@ -841,9 +838,9 @@ body {
 }
 
 .faq-section-contents-bar {
-  width: Fill (1, 140px) px;
+  width: 90vw;
   height: 3px;
-  margin-left: 30px;
+  margin: auto;
   padding: 1.5px 0px 1.5px 0px;
   background-color: #cdd6da;
   opacity: 25%;
@@ -1862,11 +1859,14 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 320px;
+    width: 95%;
   }
 
   /* Rent/Lease Section */
 
+  .rent-lease-section-content-description {
+    width: 90vw;
+  }
   .rent-lease-section-title {
     font-size: 16px;
     line-height: 24px;
@@ -1948,7 +1948,7 @@ body {
 
   .footer-section-responsive {
     display: block;
-    background-color: #F6F7F9;
+    background-color: #f6f7f9;
   }
 
   .footer-section-head-part-one {
