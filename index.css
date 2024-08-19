@@ -418,7 +418,8 @@ body {
   width: 100%;
   height: fit-content;
   display: flex;
-  margin-left: 32px;
+  padding-left: 32px;
+  padding-right: 24px;
   overflow-x: scroll;
   gap: 32px;
 }
