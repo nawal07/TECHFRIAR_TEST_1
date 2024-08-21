@@ -50,20 +50,28 @@ body {
 .navbar-social-media-facebook {
   width: 8.8px;
   height: 15.5px;
+  text-decoration: none;
+  color: #000000;
 }
 .navbar-social-media-instagram {
   width: 14px;
   height: 14px;
   border: 0.8px 0px 0px 0px;
+  text-decoration: none;
+  color: #000000;
 }
 .navbar-social-media-twitter {
   width: 15.2px;
   height: 14.11px;
+  text-decoration: none;
+  color: #000000;
 }
 .navbar-social-media-linkedin {
   width: 15px;
   height: 15px;
   border: 0.7px 0px 0px 0px;
+  text-decoration: none;
+  color: #000000;
 }
 .navbar-heading-end {
   height: 29px;
@@ -1015,7 +1023,7 @@ body {
 
   .navbar-drop-down-menu {
     width: 72vw;
-    height: 80vh;
+    height: 60vh;
     background-color: #ffffff;
     position: fixed;
     right: 0;
