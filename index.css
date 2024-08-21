@@ -1023,12 +1023,13 @@ body {
 
   .navbar-drop-down-menu {
     width: 72vw;
-    height: 60vh;
+    height: fit-content;
     background-color: #ffffff;
     position: fixed;
     right: 0;
     top: 0;
     padding: 56px 32px;
+    padding-bottom: 88px;
     z-index: 155;
     display: none;
     flex-direction: column;

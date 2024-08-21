@@ -1,4 +1,4 @@
-// Drop down Menu bar Open on click 
+// Drop down Menu bar Open on click
 
 document.getElementById('humburgerIcon').addEventListener('click', function () {
   const dropDownMenu = document.getElementById('dropDownMenu');
@@ -8,16 +8,29 @@ document.getElementById('humburgerIcon').addEventListener('click', function () {
   mainPage.classList.add('fade');
 });
 
-// Drop down Menu bar Hide on click 
-document.getElementById('hideDropdownMenu').addEventListener('click', function () {
+// Drop down Menu bar Hide on click
+document
+  .getElementById('hideDropdownMenu')
+  .addEventListener('click', function () {
+    const dropDownMenu = document.getElementById('dropDownMenu');
+    const mainPage = document.getElementById('mainPage');
+
+    dropDownMenu.style.display = 'none';
+    mainPage.classList.remove('fade');
+  });
+
+// Drop down Menu bar Hide on clicking any links
+
+document.addEventListener('click', function (event) {
   const dropDownMenu = document.getElementById('dropDownMenu');
   const mainPage = document.getElementById('mainPage');
 
-  dropDownMenu.style.display = 'none';
-  mainPage.classList.remove('fade');
+  if (dropDownMenu.style.display === 'block' && dropDownMenu.contains(event.target)) {
+    dropDownMenu.style.display = 'none';
+    mainPage.classList.remove('fade');
+  }
 });
-
-// Book Car Menu section Show on click 
+// Book Car Menu section Show on click
 
 document.getElementById('bookCar').addEventListener('click', function (event) {
   const bookCarMenu = document.getElementById('bookCarMenu');
@@ -44,7 +57,7 @@ document.addEventListener('click', function (event) {
   }
 });
 
-// Book Car for same pickup location option 
+// Book Car for same pickup location option
 
 document.getElementById('same-pick').addEventListener('click', function () {
   const differntDropOff = document.getElementById('differnt-drop-location');
@@ -57,7 +70,7 @@ document.getElementById('same-pick').addEventListener('click', function () {
   differntDropOff.style.display = 'none';
 });
 
-// Book Car for different pickup location option 
+// Book Car for different pickup location option
 
 document.getElementById('differnt-drop').addEventListener('click', function () {
   const differntDropOff = document.getElementById('differnt-drop-location');
@@ -69,7 +82,7 @@ document.getElementById('differnt-drop').addEventListener('click', function () {
   differntDropOff.style.display = 'flex';
 });
 
-// Show decription of each FAQs 
+// Show decription of each FAQs
 
 Array.prototype.forEach.call(
   document.getElementsByClassName('showDescription'),
@@ -97,7 +110,7 @@ Array.prototype.forEach.call(
   }
 );
 
-// Hide decription of each FAQs 
+// Hide decription of each FAQs
 
 Array.prototype.forEach.call(
   document.getElementsByClassName('hideDescription'),
